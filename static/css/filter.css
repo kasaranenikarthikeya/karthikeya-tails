@@ -1,0 +1,47 @@
+/* Style for the filter container */
+#filterForm {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the input fields in the filter section */
+#filterForm input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the filter button */
+#filterForm button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+#filterForm button:hover {
+    background-color: #45a049;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    #filterForm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filterForm input[type="text"] {
+        margin-bottom: 10px;
+    }
+}

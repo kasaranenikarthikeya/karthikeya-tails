@@ -1,0 +1,56 @@
+/* Style for the sales table */
+#salesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#salesTable th,
+#salesTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#salesTable th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+}
+
+#salesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#salesTable tr:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the filter form */
+#filterForm {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#filterForm input {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+}
+
+#filterForm button {
+    padding: 8px 12px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#filterForm button:hover {
+    background-color: #45a049;
+}

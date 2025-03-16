@@ -1,0 +1,224 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7dff, #283c86);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Container to hold all content */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="number"], input[type="date"], input[type="tel"] {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Input Fields Focus */
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Hover Effects on Buttons */
+button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#addProduct {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+#addProduct:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Product Entry Fields */
+.product-entry {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    table-layout: auto;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+table {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+table th, td {
+    white-space: nowrap;
+}
+
+/* Grand Total Styling */
+#grand_total {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .product-entry {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], input[type="tel"] {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    table th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table {
+        max-height: 350px;
+        overflow-y: auto;
+        width: 100%;
+    }
+}
+
+/* Super Mobile Adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .product-entry input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    #addProduct, button[type="submit"] {
+        font-size: 14px;
+    }
+
+    table th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table {
+        max-height: 250px;
+    }
+}
