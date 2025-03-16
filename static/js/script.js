@@ -1,5 +1,5 @@
-// const API_URL = "https://karthikeya-tails.onrender.com";
-const API_URL = "http://127.0.0.1:5000/";
+const API_URL = "https://karthikeya-tails.onrender.com";
+// const API_URL = "http://127.0.0.1:5000/";
 
 document.getElementById("salesForm").addEventListener("submit", async function (event) {
     event.preventDefault();
